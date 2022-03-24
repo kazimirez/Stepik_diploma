@@ -5,15 +5,15 @@ class MainPageLocators:
     pass
 
 
-
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
     REGISTER_INPUT_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
     REGISTER_INPUT_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password1")
-    REGISTER_INPUT_PASSWORD_CONFIRM = (By.CSS_SELECTOR, "#id_registration-password2")
-    REGISTER_BUTTON_REGISTER = (By.CSS_SELECTOR, "button[name=registration_submit]")
-
+    REGISTER_INPUT_PASSWORD_CONFIRM = (
+    By.CSS_SELECTOR, "#id_registration-password2")
+    REGISTER_BUTTON_REGISTER = (
+    By.CSS_SELECTOR, "button[name=registration_submit]")
 
 
 class ProductPageLocators:
@@ -35,6 +35,3 @@ class BasketPageLocators:
     BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-group > .btn:nth-child(1)")
     BASKET_PRODUCT_NAME = (By.CSS_SELECTOR, ".basket-items h3")
     BASKET_EMPTY_TEXT = (By.CSS_SELECTOR, "#content_inner p")
-
-
-
